@@ -1,0 +1,286 @@
+:root {
+    --gray: #2d3748;
+    --darkgray: #4a5568;
+    --lightgray: #f7fafc;
+    --primary: #6b46c1;
+}
+
+body > section > div > h1 {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Dancing Script", cursive; 
+}
+
+body > nav {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Dancing Script", cursive; 
+}
+
+.navbar {
+    background-color: rgb(235, 238, 235);
+    height: 15vh;
+    display: flex;
+    padding: 0 7%;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(1, 1, 1, 0.2);
+}
+
+.navbar > h1 {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.hero-container {
+    display: flex;
+    height: 470px;
+    background: rgb(255, 255, 255);
+}
+
+.hero-container > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero-container h1 {
+    font-size: 60px;
+    width: 360px;
+    margin: 20px 0;
+}
+
+.hero-container p {
+    font-size: 30px;
+    color: var(--gray);
+}
+
+.hero-container > img {
+    width: 50%;
+    align-items: center;
+    margin: 23px 23px;
+}
+
+.description-container {
+    height: 280px;
+    margin: 40px 0px;
+    padding: 0 8%;
+    display: flex;
+}
+
+.description-container h2 {
+    color: var(--darkgray);
+}
+
+.description-container p {
+    color: var(--gray);
+}
+
+.description-container > div > div {
+    width: 500px;
+}
+
+.description-container > div {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px 0px rgba(1, 1, 1, 0.1);
+    border-top: 1px solid rgb(228, 228, 228);
+
+}
+
+.description-container > img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.description-left-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-container {
+    min-height: 400px;
+    background: rgb(258, 258, 258);
+    margin: 40px 0;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 30px;
+}
+
+.content-container .card {
+    background: rgb(248, 248, 248);
+    height: 100% 0;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgb(201, 201, 198);
+    transform: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgb(201, 201, 198);
+    cursor: pointer;
+}
+
+.card > img {
+    object-fit: cover;
+    height: 240px;
+    width: 100%;
+}
+
+.card > .card-body {
+    padding: 20px;
+
+} 
+
+.card h3 {
+    font-size: 20px;
+    margin: 0 15px 0 0;
+}
+
+.card p {
+    color: var(--gray);
+    font-size: 16px;
+}
+
+.card > .card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.what-is-container {
+    height: 575px;
+    padding: 0 10%;
+    display: flex;
+    margin: 40px 0;
+}
+
+.what-is-container h1 {
+    font-size: 60px;
+}
+
+.what-is-container p {
+    color: var(--gray);
+    font-size: 16px;
+}
+
+.what-is-container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 48%;
+    background: var(--lightgray);
+}
+
+.what-is-container > div > div {
+    width: 400px;
+}
+
+.what-is-container > img {
+    width: 52%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10%;
+    margin: 40px 0;
+}
+
+.btn {
+    background: var(--primary);
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: red;
+    padding: 0 10%;
+    height: 80px;
+}
+
+footer > div {
+    display: flex;
+    gap: 30px;
+}
+
+/* utils */
+
+.font-weight {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+@media only screen and (max-width: 420px) {
+    .hero-container {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .hero-container > div {
+        width: 100%;
+    }
+
+    .hero-container > img {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .content-container {
+        grid-template-columns: 1fr;
+    }
+
+    .description-container {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .description-container > div {
+        width: 100%;
+    }
+
+    .description-container > div > div {
+        width: 100%;
+    }
+
+    .description-container > img {
+        width: 100%;
+    }
+
+    .what-is-container {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .what-is-container > div {
+        width: 100%;
+    }
+
+    .what-is-container > img {
+        width: 100%;
+    }
+
+
+}
